@@ -149,7 +149,7 @@ public class sign_up_correct_data extends Set {
 		//WebElement free_ppt_btn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/header/div[1]/div[2]/div/nav/div/div/ul/li[2]/div/ul/li[1]/a")));
 	    //free_ppt_btn.click();
 	    //Thread.sleep(2000);
-		WebElement size=driver.findElement(By.cssSelector("//img[contains(@src='https://www.slideteam.net/media/catalog/product/cache/260x195/b/u/business_puzzle_list_diagarm_powerpoint_templates_ppt_presentation_slides_0812_Slide01.jpg')]"));
+		WebElement size=driver.findElement(By.xpath("//img[contains(@src='business_puzzle_list_diagarm_powerpoint_templates_ppt_presentation_slides_0812_Slide01.jpg')]"));
 	        Thread.sleep(2000);
 		Dimension size1 = size.getSize();
     //   int width=driver.findElement(By.tagName("img")).getSize().getWidth();
@@ -166,7 +166,7 @@ public class sign_up_correct_data extends Set {
 	driver.get("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
 		
-	WebElement size0=driver.findElement(By.cssSelector("//img[contains(@src='https://www.slideteam.net/media/catalog/product/cache/260x195/c/h/change_management_powerpoint_presentation_slides_Slide01.jpg')]"));
+	WebElement size0=driver.findElement(By.xpath("//img[contains(@src='change_management_powerpoint_presentation_slides_Slide01.jpg')]"));
 		Thread.sleep(2000);
      // int height1=driver.findElement(By.tagName("img")).getSize().getHeight();
 Dimension size2 = size0.getSize();

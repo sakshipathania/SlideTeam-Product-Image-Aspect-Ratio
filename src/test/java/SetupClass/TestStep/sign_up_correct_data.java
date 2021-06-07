@@ -157,7 +157,7 @@ public class sign_up_correct_data extends Set {
       //to verify width
       Assert.assertEquals(width, 152);
       //to verify height
-      Assert.assertEquals(height, 200);
+      Assert.assertEquals(height, 60);
 		
 		Thread.sleep(4000);
 	driver.get("https://www.slideteam.net/professional-powerpoint-templates");
@@ -171,7 +171,7 @@ public class sign_up_correct_data extends Set {
       //to verify width
       Assert.assertEquals(width1, 152);
       //to verify height
-      Assert.assertEquals(height1, 200);
+      Assert.assertEquals(height1, 60);
 	}
 
 	@Then("^user download a free product cd$")

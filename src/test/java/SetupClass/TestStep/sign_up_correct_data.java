@@ -150,30 +150,33 @@ public class sign_up_correct_data extends Set {
 	    //Thread.sleep(2000);
 		
        int width=driver.findElement(By.tagName("img")).getSize().getWidth();
-      int hight=driver.findElement(By.tagName("img")).getSize().getHeight();
+      int height=driver.findElement(By.tagName("img")).getSize().getHeight();
 
-      System.out.println(width +">>>"+hight);
+      System.out.println(width +">>>"+height);
 
       //to verify width
       Assert.assertEquals(width, 200);
       //to verify height
-      Assert.assertEquals(width, 200);
+      Assert.assertEquals(height, 200);
+		
+		Thread.sleep(4000);
+	driver.findElement('https://www.slideteam.net/professional-powerpoint-templates');
+		Thread.sleep(5000);
+		
+	int width1=driver.findElement(By.className("photo image small_image_hover lazyloaded")).getSize().getWidth();
+      int height1=driver.findElement(By.className("photo image small_image_hover lazyloaded")).getSize().getHeight();
+
+      System.out.println(width1 +">>>"+height1);
+
+      //to verify width
+      Assert.assertEquals(width1, 200);
+      //to verify height
+      Assert.assertEquals(height1, 200);
 	}
 
 	@Then("^user download a free product cd$")
 	public void user_download_a_free_product_cd() throws InterruptedException  {
-		//driver.findElement(By.cssSelector("li.item:nth-child(8) > div:nth-child(1) > div:nth-child(2) > strong:nth-child(1) > span:nth-child(1) > a:nth-child(1)")).click();
-		//Thread.sleep(3000);
 		
-		driver.get("https://www.slideteam.net/circular-flow-of-process-4-stages-powerpoint-slides-templates.html");
-		Thread.sleep(3000);
-		
-		WebElement dwnd_btn = driver.findElement(By.cssSelector("#clicking"));
-		js.executeScript("arguments[0].scrollIntoView();", dwnd_btn);
-		 dwnd_btn.click();
-		Thread.sleep(3000);
-	   driver.get("https://www.slideteam.net/");
-	   Thread.sleep(3000);
 	}
 
 	@Then("^user delete the new account created cd$")

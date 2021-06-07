@@ -166,7 +166,7 @@ public class sign_up_correct_data extends Set {
 	driver.get("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
 		
-	WebElement size0=driver.findElement(By.tagName("img"));
+	WebElement size0=driver.findElement(By.cssSelector("#maincontent > div.columns > div > div.container.listing-container > div.products.wrapper.grid.products-grid > ol > li:nth-child(7) > div > a > img"));
      // int height1=driver.findElement(By.tagName("img")).getSize().getHeight();
 Dimension size2 = size0.getSize();
      // System.out.println(width1 +">>>"+height1);

@@ -148,12 +148,14 @@ public class sign_up_correct_data extends Set {
 		//WebElement free_ppt_btn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/header/div[1]/div[2]/div/nav/div/div/ul/li[2]/div/ul/li[1]/a")));
 	    //free_ppt_btn.click();
 	    //Thread.sleep(2000);
-		WebElement size=driver.findElement(By.tagName("img")).getSize();
+		WebElement size=driver.findElement(By.tagName("img"));
+		
+		Dimension size1 = size.getSize();
     //   int width=driver.findElement(By.tagName("img")).getSize().getWidth();
     //  int height=driver.findElement(By.tagName("img")).getSize().getHeight();
 
     //  System.out.println(width +">>>"+height);
- System.out.println(size);
+     System.out.println(size);
       //to verify width
      // Assert.assertEquals(width, 152);
       //to verify height
@@ -163,9 +165,9 @@ public class sign_up_correct_data extends Set {
 	driver.get("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
 		
-	WebElement size=driver.findElement(By.tagName("img")).getSize();
+	WebElement size=driver.findElement(By.tagName("img"));
      // int height1=driver.findElement(By.tagName("img")).getSize().getHeight();
-
+Dimension size2 = size.getSize();
      // System.out.println(width1 +">>>"+height1);
 		 System.out.println(size);
 

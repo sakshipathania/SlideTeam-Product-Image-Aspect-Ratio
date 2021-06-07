@@ -156,7 +156,8 @@ public class sign_up_correct_data extends Set {
 
       //to verify width
       Assert.assertEquals(width, 200);
-	   
+      //to verify height
+      Assert.assertEquals(width, 200);
 	}
 
 	@Then("^user download a free product cd$")

@@ -160,7 +160,7 @@ public class sign_up_correct_data extends Set {
       Assert.assertEquals(height, 200);
 		
 		Thread.sleep(4000);
-	driver.findElement('https://www.slideteam.net/professional-powerpoint-templates');
+	driver.findElement("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
 		
 	int width1=driver.findElement(By.className("photo image small_image_hover lazyloaded")).getSize().getWidth();

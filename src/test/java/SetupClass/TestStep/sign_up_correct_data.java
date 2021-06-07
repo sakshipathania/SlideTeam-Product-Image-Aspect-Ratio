@@ -148,6 +148,14 @@ public class sign_up_correct_data extends Set {
 		//WebElement free_ppt_btn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/header/div[1]/div[2]/div/nav/div/div/ul/li[2]/div/ul/li[1]/a")));
 	    //free_ppt_btn.click();
 	    //Thread.sleep(2000);
+		
+       int width=driver.findElement(By.cssSelector("#maincontent > div.columns > div > div.container.listing-container > div.products.wrapper.grid.products-grid > ol > li:nth-child(1) > div > a > img")).getSize().getWidth();
+      int hight=driver.findElement(By.cssSelector("#maincontent > div.columns > div > div.container.listing-container > div.products.wrapper.grid.products-grid > ol > li:nth-child(1) > div > a > img")).getSize().getHeight();
+
+      System.out.println(width +">>>"+hight);
+
+      //to verify width
+      Assert.assertEquals(width, 200);
 	   
 	}
 

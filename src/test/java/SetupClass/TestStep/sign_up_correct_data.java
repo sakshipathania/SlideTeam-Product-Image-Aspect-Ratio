@@ -156,7 +156,7 @@ public class sign_up_correct_data extends Set {
     //  int height=driver.findElement(By.tagName("img")).getSize().getHeight();
 
     //  System.out.println(width +">>>"+height);
-     System.out.println(size);
+                     System.out.println(size1);
       //to verify width
      // Assert.assertEquals(width, 152);
       //to verify height

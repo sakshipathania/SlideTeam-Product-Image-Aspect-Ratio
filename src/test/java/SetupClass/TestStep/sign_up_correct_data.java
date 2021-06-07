@@ -155,7 +155,7 @@ public class sign_up_correct_data extends Set {
       System.out.println(width +">>>"+height);
 
       //to verify width
-      Assert.assertEquals(width, 200);
+      Assert.assertEquals(width, 152);
       //to verify height
       Assert.assertEquals(height, 200);
 		
@@ -169,7 +169,7 @@ public class sign_up_correct_data extends Set {
       System.out.println(width1 +">>>"+height1);
 
       //to verify width
-      Assert.assertEquals(width1, 200);
+      Assert.assertEquals(width1, 152);
       //to verify height
       Assert.assertEquals(height1, 200);
 	}

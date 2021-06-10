@@ -167,7 +167,7 @@ public class sign_up_correct_data extends Set {
 		
 		//var myImg = document.querySelector(".small_image_hover");
 		
-		alert('document.querySelector(".small_image_hover")');
+		alert("document.querySelector(".small_image_hover")");
 		// var currWidth = myImg.clientWidth;
        // var currHeight = myImg.clientHeight;
         //alert("Current width=" + currWidth + ", " + "Current height=" + currHeight);

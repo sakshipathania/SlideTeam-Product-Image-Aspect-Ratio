@@ -65,13 +65,12 @@
     <version>1.7.25</version>
     <scope>test</scope> 
 </dependency>
-	  
+<!--annotation--> 
 <dependency>
     <groupId>javax.annotation</groupId>
-    <artifactId>javax.annotation-api</artifactId>
+    <artifactId>javax.annotation-api</artifact Id>
     <version>1.2</version>
-    <scope>test</scope> 
-</dependency>
+  </dependency>
 	  
 <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 <!-- <dependency>
@@ -134,5 +133,25 @@
              </executions>
           </plugin>
        </plugins>
+<plugin>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>build-helper-maven-plugin</artifactId>
+  <version>1.1</version>
+  <executions>
+    <execution>
+      <id>add-source</id>
+      <phase>generate-sources</phase>
+      <goals>
+        <goal>add-source</goal>
+      </goals>
+      <configuration>
+        <sources>
+          <source>src/java/core</source>
+          <source>src/java/gen</source>
+        </sources>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
     </build>
 </project>

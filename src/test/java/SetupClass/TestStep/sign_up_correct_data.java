@@ -150,7 +150,7 @@ public class sign_up_correct_data extends Set {
 		//WebElement free_ppt_btn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/header/div[1]/div[2]/div/nav/div/div/ul/li[2]/div/ul/li[1]/a")));
 	    //free_ppt_btn.click();
 	    //Thread.sleep(2000);
-		   String searchimage = "document.querySelector(".small_image_hover")";
+		   String searchimage = "document.querySelector(\"[class='.small_image_hover']\")" +".click()";
 
 		 js.executeScript(searchimage);
 		
@@ -173,7 +173,7 @@ public class sign_up_correct_data extends Set {
 		
 		
 	
-       String searchimage1 = "document.querySelector(".small_image_hover")";
+       String searchimage1 =  "document.querySelector(\"[class='.small_image_hover']\")" +".click()";
 
 		 js.executeScript(searchimage1);
 	//WebElement size0=driver.findElement(By.className("small_image_hover"));

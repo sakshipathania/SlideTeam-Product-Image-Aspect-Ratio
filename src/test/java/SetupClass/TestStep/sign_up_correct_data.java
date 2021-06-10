@@ -19,7 +19,7 @@ import cucumber.api.java.en.Then;
 public class sign_up_correct_data extends Set {
 	
 	WebDriverWait wait = new WebDriverWait(driver,50);
-	int var;
+	
        JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 
@@ -174,7 +174,7 @@ public class sign_up_correct_data extends Set {
 		Thread.sleep(5000);
 		var myImg1 = "document.querySelectorr(\"[class='.small_image_hover']\")";
 		 var currWidth1 = myImg1.clientWidth;
-        var currHeigh1t = myImg.clientHeight;
+        var currHeight1 = myImg.clientHeight;
         alert("Current width=" + currWidth1 + ", " + "Current height=" + currHeight1);
 
 		

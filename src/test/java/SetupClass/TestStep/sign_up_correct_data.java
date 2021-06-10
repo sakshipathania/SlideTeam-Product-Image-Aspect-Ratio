@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Dimension;
+import org.w3c.dom;
 
 import SetupClass.Set;
 import cucumber.api.java.en.Given;

@@ -164,7 +164,7 @@ public class sign_up_correct_data extends Set {
 		
 		
 		
-		var myImg = document.querySelector("/[class='.small_image_hover']/");
+		var myImg = document.querySelector(".small_image_hover");
 		
 		alert("Product found");
 		 var currWidth = myImg.clientWidth;
@@ -174,7 +174,7 @@ public class sign_up_correct_data extends Set {
 		
 		driver.get("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
-		var myImg1 = document.querySelector("/[class='.small_image_hover']/");
+		var myImg1 = document.querySelector(".small_image_hover");
 		 var currWidth1 = myImg1.clientWidth;
         var currHeight1 = myImg1.clientHeight;
         alert("Current width=" + currWidth1 + ", " + "Current height=" + currHeight1);

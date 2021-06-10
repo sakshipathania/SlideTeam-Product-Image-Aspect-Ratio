@@ -18,8 +18,8 @@ import cucumber.api.java.en.Then;
 
 public class sign_up_correct_data extends Set {
 	WebDriverWait wait = new WebDriverWait(driver,50);
-	JavascriptExecutor jsExecutor;
-       jsExecutor = (JavascriptExecutor) driver;
+	
+       JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	@Given("^user is already on sign up page cd$")
 	public void user_is_already_on_sign_up_page_cd() throws InterruptedException  {
@@ -152,7 +152,7 @@ public class sign_up_correct_data extends Set {
 	    //Thread.sleep(2000);
 		   String searchimage = "document.querySelector(".small_image_hover")";
 
-		 jsExecutor.executeScript(searchimage);
+		 js.executeScript(searchimage);
 		
 		//WebElement size=driver.findElement(By.className("small_image_hover"));
 	        Thread.sleep(2000);
@@ -175,13 +175,13 @@ public class sign_up_correct_data extends Set {
 	
        String searchimage1 = "document.querySelector(".small_image_hover")";
 
-		 jsExecutor.executeScript(searchimage1);
+		 js.executeScript(searchimage1);
 	//WebElement size0=driver.findElement(By.className("small_image_hover"));
 		Thread.sleep(2000);
      // int height1=driver.findElement(By.tagName("img")).getSize().getHeight();
-Dimension size2 = size0.getSize();
+//Dimension size2 = size0.getSize();
      // System.out.println(width1 +">>>"+height1);
-		 System.out.println(size2);
+		// System.out.println(size2);
 
       //to verify width
     //  Assert.assertEquals(width1, 152);

@@ -156,7 +156,7 @@ public class sign_up_correct_data extends Set {
 		
 		//WebElement size=driver.findElement(By.className("small_image_hover"));
 	        Thread.sleep(2000);
-		Dimension searchimage = size.getSize();
+		Dimension size = searchimage.getSize();
     //   int width=driver.findElement(By.tagName("img")).getSize().getWidth();
     //  int height=driver.findElement(By.tagName("img")).getSize().getHeight();
 
@@ -179,7 +179,7 @@ public class sign_up_correct_data extends Set {
 	//WebElement size0=driver.findElement(By.className("small_image_hover"));
 		Thread.sleep(2000);
      // int height1=driver.findElement(By.tagName("img")).getSize().getHeight();
-Dimension searchimage1 = size0.getSize();
+                 Dimension Size1 = searchimage1.getSize();
      // System.out.println(width1 +">>>"+height1);
 		// System.out.println(size2);
 Thread.sleep(4000);

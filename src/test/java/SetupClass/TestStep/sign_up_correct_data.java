@@ -166,17 +166,17 @@ public class sign_up_correct_data extends Set {
 		
 		
 		
-		Var myImg = document.querySelector(".small_image_hover");
-		Var currWidth = myImg.clientWidth;
-               Var currHeight = myImg.clientHeight;
+		var myImg = document.querySelector(".small_image_hover");
+		var currWidth = myImg.clientWidth;
+               var currHeight = myImg.clientHeight;
                alert("Current width=" + currWidth + ", " + "Current height=" + currHeight);
                Thread.sleep(2000);
 		
 		driver.get("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
-		Var myImg1 = document.querySelector(".small_image_hover");
-		Var currWidth1 = myImg1.clientWidth;
-       Var currHeight1 = myImg1.clientHeight;
+		var myImg1 = document.querySelector(".small_image_hover");
+		var currWidth1 = myImg1.clientWidth;
+       var currHeight1 = myImg1.clientHeight;
        alert("Current width=" + currWidth1 + ", " + "Current height=" + currHeight1);
 
 		

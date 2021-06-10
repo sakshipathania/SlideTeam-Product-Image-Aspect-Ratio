@@ -17,7 +17,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class sign_up_correct_data extends Set {
-	public abstract int getSize();
+	
 	WebDriverWait wait = new WebDriverWait(driver,50);
 	
        JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -21,7 +21,10 @@ public class sign_up_correct_data extends Set {
 	WebDriverWait wait = new WebDriverWait(driver,50);
 	
        JavascriptExecutor js = (JavascriptExecutor) driver;
-	
+	public int getSize() {
+        return size;
+    }
+
 	@Given("^user is already on sign up page cd$")
 	public void user_is_already_on_sign_up_page_cd() throws InterruptedException  {
 	    
@@ -154,7 +157,15 @@ public class sign_up_correct_data extends Set {
 		
 		   String searchimage = "document.querySelector(\"[class='.small_image_hover']\")".getSize();;
 		   js.executeScript(searchimage);
-	        Thread.sleep(2000);
+		Thread.sleep(4000);
+	        driver.get("https://www.slideteam.net/professional-powerpoint-templates");
+		Thread.sleep(5000);
+		String searchimage1 =  "document.querySelector(\"[class='.small_image_hover']\")".getSize();;
+                js.executeScript(searchimage1);
+                Thread.sleep(2000);
+		
+		
+		
 		//Dimension size = searchimage
 		  //System.out.println(size);
 		
@@ -168,13 +179,6 @@ public class sign_up_correct_data extends Set {
      // Assert.assertEquals(width, 152);
       //to verify height
      // Assert.assertEquals(height, 62);
-		
-		Thread.sleep(4000);
-	        driver.get("https://www.slideteam.net/professional-powerpoint-templates");
-		Thread.sleep(5000);
-		String searchimage1 =  "document.querySelector(\"[class='.small_image_hover']\")".getSize();;
-                js.executeScript(searchimage1);
-                Thread.sleep(2000);
 		////Dimension Size1 = searchimage1.getSize();
 		//System.out.println(Size1);
                // Thread.sleep(4000);

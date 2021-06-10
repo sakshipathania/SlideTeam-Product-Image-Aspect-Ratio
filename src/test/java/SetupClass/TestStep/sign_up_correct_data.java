@@ -150,39 +150,38 @@ public class sign_up_correct_data extends Set {
 		//WebElement free_ppt_btn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/header/div[1]/div[2]/div/nav/div/div/ul/li[2]/div/ul/li[1]/a")));
 	    //free_ppt_btn.click();
 	    //Thread.sleep(2000);
-		   String searchimage = "document.querySelector(\"[class='.small_image_hover']\")";
-
-		 js.executeScript(searchimage);
+		
+		   String searchimage = "document.querySelector(\"[class='.small_image_hover']\")".getSize();;
+		   js.executeScript(searchimage);
+	        Thread.sleep(2000);
+		//Dimension size = searchimage
+		  //System.out.println(size);
 		
 		//WebElement size=driver.findElement(By.className("small_image_hover"));
-	        Thread.sleep(2000);
-		Dimension size = searchimage.getSize();
-    //   int width=driver.findElement(By.tagName("img")).getSize().getWidth();
-    //  int height=driver.findElement(By.tagName("img")).getSize().getHeight();
+                //   int width=driver.findElement(By.tagName("img")).getSize().getWidth();
+                //  int height=driver.findElement(By.tagName("img")).getSize().getHeight();
 
-    //  System.out.println(width +">>>"+height);
-                    // System.out.println(size1);
+                //  System.out.println(width +">>>"+height);
+                  
       //to verify width
      // Assert.assertEquals(width, 152);
       //to verify height
      // Assert.assertEquals(height, 62);
 		
 		Thread.sleep(4000);
-	driver.get("https://www.slideteam.net/professional-powerpoint-templates");
+	        driver.get("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
+		String searchimage1 =  "document.querySelector(\"[class='.small_image_hover']\")".getSize();;
+                js.executeScript(searchimage1);
+                Thread.sleep(2000);
+		////Dimension Size1 = searchimage1.getSize();
+		//System.out.println(Size1);
+               // Thread.sleep(4000);
 		
-		
-	
-       String searchimage1 =  "document.querySelector(\"[class='.small_image_hover']\")";
-
-		 js.executeScript(searchimage1);
-	//WebElement size0=driver.findElement(By.className("small_image_hover"));
-		Thread.sleep(2000);
+		//WebElement size0=driver.findElement(By.className("small_image_hover"));
      // int height1=driver.findElement(By.tagName("img")).getSize().getHeight();
-                 Dimension Size1 = searchimage1.getSize();
-     // System.out.println(width1 +">>>"+height1);
-		// System.out.println(size2);
-Thread.sleep(4000);
+           // System.out.println(width1 +">>>"+height1);
+		
       //to verify width
     //  Assert.assertEquals(width1, 152);
       //to verify height

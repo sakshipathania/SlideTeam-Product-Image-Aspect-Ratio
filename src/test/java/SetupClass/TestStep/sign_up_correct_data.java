@@ -19,7 +19,7 @@ import cucumber.api.java.en.Then;
 public class sign_up_correct_data extends Set {
 	
 	WebDriverWait wait = new WebDriverWait(driver,50);
-	
+	int var;
        JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 
@@ -164,14 +164,15 @@ public class sign_up_correct_data extends Set {
 		
 		
 		
-		var myImg = document.querySelector(".small_image_hover");
+		var myImg = "document.querySelector(".small_image_hover")";
 		 var currWidth = myImg.clientWidth;
         var currHeight = myImg.clientHeight;
         alert("Current width=" + currWidth + ", " + "Current height=" + currHeight);
           Thread.sleep(2000);
+		
 		driver.get("https://www.slideteam.net/professional-powerpoint-templates");
 		Thread.sleep(5000);
-		var myImg1 = document.querySelector(".small_image_hover");
+		var myImg1 = "document.querySelector(".small_image_hover")";
 		 var currWidth1 = myImg1.clientWidth;
         var currHeigh1t = myImg.clientHeight;
         alert("Current width=" + currWidth1 + ", " + "Current height=" + currHeight1);

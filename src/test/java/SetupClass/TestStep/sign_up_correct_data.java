@@ -21,9 +21,7 @@ public class sign_up_correct_data extends Set {
 	WebDriverWait wait = new WebDriverWait(driver,50);
 	
        JavascriptExecutor js = (JavascriptExecutor) driver;
-	public int getSize() {
-        return size;
-    }
+	
 
 	@Given("^user is already on sign up page cd$")
 	public void user_is_already_on_sign_up_page_cd() throws InterruptedException  {
